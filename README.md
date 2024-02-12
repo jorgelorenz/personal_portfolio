@@ -7,7 +7,7 @@ In this moment you can see here:
 
 ·Maze generation algorithm with linear programming.(Open in Colab to watch it better)
 ~~~
-Tools:
+What I used:
 ·Linear Programming, Latex
 
 ·Python: CVXPY, Pandas, NumPy
