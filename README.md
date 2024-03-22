@@ -1,7 +1,7 @@
 # Personal portfolio
 This is my portfolio with some personal projects that I have been working on.
 
-
+Developing... There will be updates soon.
 ## Projects:
 
 
