@@ -13,3 +13,11 @@ What I used:
 ·Python: CVXPY for solving the optimization problem and Pandas for visualizing the efficiency of the algorithm.
 ~~~
 
+·Approximating log-normal distribution by binomial model.([Open in Colaboratory](https://colab.research.google.com/drive/1sKPsxRBTrLpTY_9qBMY5P2XkvhtLpepc?usp=sharing))
+~~~
+What I used:
+·Quantitative finance and Latex for writing the problem.
+
+·Python: NumPy, Pandas and Seaborn for visualizing the approximation.
+~~~
+
