@@ -21,3 +21,10 @@ What I used:
 ·Python: NumPy, Pandas and Seaborn for visualizing the approximation.
 ~~~
 
+·Pricing european call with Montecarlo.([Open in Colaboratory](https://colab.research.google.com/drive/1AW4opY1PghGt_sX2ysGtsAwgyT9kMgUH?usp=sharing))
+~~~
+What I used:
+·Quantitative finance and Latex for writing the problem.
+
+·Python: NumPy for generating gaussian samples.
+~~~
