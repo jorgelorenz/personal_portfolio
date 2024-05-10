@@ -28,3 +28,11 @@ What I used:
 
 ·Python: NumPy for generating gaussian samples.
 ~~~
+
+·Pricing european option with binomial tree.([Open in Colaboratory](https://colab.research.google.com/drive/1EWTfCXkp4TiM3ghmd6sauk8wF6D-8rd1?usp=sharing))
+~~~
+What I used:
+·Quantitative finance and Latex for writing the problem.
+
+·Python
+~~~
