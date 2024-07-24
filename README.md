@@ -3,7 +3,6 @@ This is my portfolio with some personal projects that I have been working on.
 
 Developing... There will be updates soon.
 ## Projects:
-https://github.com/jorgelorenz/personal_portfolio/blob/main/TFG%20final.pdf
 ·Final thesis for BSc in Mathematics (spanish version).([Open](https://github.com/jorgelorenz/personal_portfolio/blob/main/TFG%20final.pdf))
 ~~~
 Contents:
