@@ -3,6 +3,27 @@ This is my portfolio with some personal projects that I have been working on.
 
 Developing... There will be updates soon.
 ## Projects:
+·A Quantitative Finance library in python.([Open](https://github.com/jorgelorenz/personal_portfolio/blob/main/Simulator.py))
+~~~
+The idea is developing a general framework with multiple simulation tools and customizables payoffs.
+At the moment the library has the following tools.
+
+Pricing tools for:
+·European Vanilla Options
+·Digital Options
+·Barrier Options
+·Asian Options
+·Future Options
+·Soon: American, Bermudan, Caps, Floors, Sawptions, Structured products
+
+The above pricing tools are based on closed formulas and the following simulation tools.
+Simulation Tools:
+·Shifted Lognormal, Black-Scholes and Black 76 models
+·Bachelier model
+·Soon: Tree Simulators: Jarrow-Rudd , etc... , Multi-Asset simulators, Local Volatility models, Stochastic Volatility models
+
+~~~
+
 ·Final thesis for BSc in Mathematics (spanish version).([Open](https://github.com/jorgelorenz/personal_portfolio/blob/main/TFG%20final.pdf))
 ~~~
 Contents:
