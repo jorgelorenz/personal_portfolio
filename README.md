@@ -23,7 +23,7 @@ Simulation Tools:
 ·Shifted Lognormal, Black-Scholes and Black 76 models
 ·Bachelier model
 ·Binomial model: Jarrow-Rudd Tree, ...
-·Soon: Multi-Asset simulators, Local Volatility models, Stochastic Volatility models
+·Soon: Cox-Ross-Rubinstein, Black-Derman-Toy, Multi-Asset simulators, Local Volatility models, Stochastic Volatility models
 
 ~~~
 
