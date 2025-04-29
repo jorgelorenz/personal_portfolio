@@ -14,13 +14,16 @@ Pricing tools for:
 ·Barrier Options
 ·Asian Options
 ·Future Options
-·Soon: American, Bermudan, Caps, Floors, Sawptions, Structured products
+·Caps, Floors
+·American, Bermudan
+·Soon: Swaptions, Multi-asset products, Structured products
 
 The above pricing tools are based on closed formulas and the following simulation tools.
 Simulation Tools:
 ·Shifted Lognormal, Black-Scholes and Black 76 models
 ·Bachelier model
-·Soon: Tree Simulators: Jarrow-Rudd , etc... , Multi-Asset simulators, Local Volatility models, Stochastic Volatility models
+·Binomial model: Jarrow-Rudd Tree, ...
+·Soon: Multi-Asset simulators, Local Volatility models, Stochastic Volatility models
 
 ~~~
 
