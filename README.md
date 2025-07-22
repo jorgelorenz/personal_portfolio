@@ -35,8 +35,6 @@ Contents:
 ·Numerical methods: Monte-carlo model, tree models, EDP numerical solutions, Malliavin calculus. 
 ~~~
 
-~~~
-
 ·Final thesis for BSc in Computer Science (spanish version).([Open](https://github.com/jorgelorenz/personal_portfolio/blob/main/TFG%20Inform%C3%A1tica%20final.pdf))
 ~~~
 Contents:
