@@ -85,9 +85,7 @@ class BachelierSimulator(Simulator):
 class GarchSimulator(Simulator):
     pass
 
-#######  Simuladores de Árbol ########
-#TODO: Meter simuladores en árbol para que devuelva datos intermedios y poder valorar americanas, bermuda, etc
-
+#######  Simuladores de Árbol #######
 class TreeSimulator(Simulator):
     def __init__(self):
         #Probabilities is a list of positive floats which sum is 1
