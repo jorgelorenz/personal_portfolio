@@ -3,12 +3,13 @@ This is my portfolio with some personal projects that I have been working on.
 
 Developing... There will be updates soon.
 ## Projects:
-·A Quantitative Finance library in python.([Open](https://github.com/jorgelorenz/personal_portfolio/blob/main/Simulator.py))
+·A Quantitative Finance library in python.([Open](https://github.com/jorgelorenz/personal_portfolio/tree/main/QuantFinance))
 ~~~
 The idea is developing a general framework with multiple simulation tools and customizables payoffs.
 At the moment the library has the following tools.
 
 Pricing tools for:
+·Standar IRS Swap with different: Business day convention, calendar adjustment, frequency, etc...
 ·European Vanilla Options
 ·Digital Options
 ·Barrier Options
@@ -23,7 +24,7 @@ Simulation Tools:
 ·Shifted Lognormal, Black-Scholes and Black 76 models
 ·Bachelier model
 ·Binomial model: Jarrow-Rudd Tree, ...
-·Soon: Cox-Ross-Rubinstein, Black-Derman-Toy, Multi-Asset simulators, Local Volatility models, Stochastic Volatility models
+·Soon: Hull-White Simulator, Multi-Asset simulators, Local Volatility models, Cox-Ross-Rubinstein, Black-Derman-Toy, , Stochastic Volatility models
 
 ~~~
 
