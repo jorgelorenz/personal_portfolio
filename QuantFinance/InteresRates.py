@@ -1,10 +1,8 @@
 import numpy as np
 from scipy.interpolate import interp1d
-from FinanceDate import FinanceDate, Frequency, BusinessDayConvention, HolidayCalendar, DateGenerator, DayCountConvention
+from FinanceDate import FinanceDate, DayCountConvention
 import matplotlib.pyplot as plt
 from scipy.interpolate import CubicSpline
-from scipy.optimize import brentq
-from FixedRatesInstruments import InterestRateSwapFixedVSFloating
 
 class InterestRateCurve:
     """
@@ -336,38 +334,3 @@ class ZeroRateCurve(Curve):
             Interpolation method: "linear", "cubic", "quadratic", etc.
         """
         super().__init__(times, zero_rates, interpolation_method)
-    
-if __name__ == "__main__":
-
-    ############ Prueba valoración swap con examen del master #####################
-    fv = 45657
-    fechas_estr = [45657,45663,45667,45674,45691,45719,45750,45782,45811,45841,45873,45903,45933,45964,45994,46027,46206,46391,46755,47121,47486,47851,48218,48582,48947,49312,49677,50045,51138,52965,54791,56618,60272,63922]
-    valores_estr = [1,0.999516,0.999192,0.998626,0.997255,0.995199,0.99314,0.991182,0.989529,0.987915,0.986231,0.984684,0.983171,0.981661,0.980203,0.978596,0.969929,0.960734,0.941642,0.921557,0.901559,0.88111,0.860384,0.840072,0.820523,0.798701,0.778146,0.757801,0.700782,0.626543,0.57159,0.527079,0.456181,0.401673]
-    estr = InterestRateCurve.from_dates(fv, fechas_estr, valores_estr, curve_type="discount_factor")
-
-    fechas_eur6M = [45657,45658,45659,45666,45673,45680,45691,45719,45749,45779,45810,45840,46024,46205,46391,46755,47120,47485,47850,48215,48582,48946,49311,51137,52964,54791,56618,58442,60269,62095,63921]
-    valores_eur6m = [1,0.999918062269897,0.999836131253586,0.999282362277824,0.998721447149518,0.99810109884343,0.997181412737011,0.995051591517705,0.992910579958377,0.990901502704203,0.988906380827598,0.986543012243062,0.97648884585673,0.966919103253629,0.956792576017485,0.936296353160604,0.915277061902381,0.894434634667742,0.873359080366994,0.852359507361842,0.831563699487058,0.811287877313173,0.790774820106363,0.696767382654296,0.626822332676576,0.57596634982958,0.535855347717537,0.499599747977576,0.469777072011112,0.446121298194756,0.426638948270295]
-    eur6m = InterestRateCurve.from_dates(fv, fechas_eur6M, valores_eur6m, curve_type="discount_factor")
-
-    fixed_coupon = 0.0221 #2.18% en el excel del examen, forward ligeramente distintos
-
-    initial_date = 45819
-    end_date = 47280
-
-    frequency_float = Frequency.SEMIANNUAL
-    frequency_fixed = Frequency.SEMIANNUAL
-
-    fixing_lag = 2
-
-    convention_float = DayCountConvention.ACT_360
-    convention_fixed = DayCountConvention.CONV_30_360
-
-    business_day_convention = BusinessDayConvention.MODIFIED_FOLLOWING
-    calendar_convention =CalendarAdjustmentConvention.UNADJUSTED
-
-    swap = InterestRateSwapFixedVSFloating.shortDefinition(fv, eur6m, fixed_coupon, initial_date, end_date, frequency_float,frequency_fixed=frequency_fixed,
-                                                         convention_fixed=convention_fixed, convention_float=convention_float, business_day_convention=business_day_convention,
-                                                         calendar_convention=calendar_convention, risk_free_curve=estr, fixing_lag=fixing_lag)
-    
-    print(swap.valuate())
-

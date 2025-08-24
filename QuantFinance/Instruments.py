@@ -35,8 +35,6 @@ class Option(ABC, Instrument):
         sims = simulator.simulate(dates_obs, n_sims=n_sims)
         
         if len(dates) == 1:
-            print(sims[0,0])
-            print(payoff.cash_flows(sims[0,0], **kwargs))
             return np.mean( np.dot([payoff.cash_flows(sims[i,0], **kwargs) for i in range(n_sims)], discounts) )
         else:
             return np.mean( np.dot([payoff.cash_flows(sims[i,:], **kwargs) for i in range(n_sims)], discounts) )
